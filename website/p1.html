@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"content="width=device-width">
+<title>website</title>
+<link rel="stylesheet"type="text/css"href="css/shop.css">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<h3><u><b><strong>  JAETRONICS  </strong></b></u>
+</h3>
+</head>
+<body>
+<div class="topbar">
+<div class="searchbox">
+<img src="img/jp.jpg" class="logo">
+<input type="text"class="form-control">
+<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+</span>
+</div>
+<div class="menubar">
+<ul>
+<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+cart</a></li>
+<li><a href="#">Sign Up</a></li>
+<li><a href="#">Login</a></li>
+
+</ul>
+</div>
+</div>
+<section class="doubleproduct">
+<div class="container">
+<div class="row">
+<div class="col-md-5>
+<div id="productslider" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/head.png" class="d-block">
+	  
+    </div>
+  </div>
+  </div>
+  </section>
+<div class="col-md-7">
+<h2>Skull Candy-Black Colour</h2>
+<p>Product Code:INRSE11</p>
+<p class="Price">Rs.1000/-</p>
+<p><b>Availability:</b>In stock</p>
+<p><b>Brand:</b>Skull Candy</p>
+</section>
+<table bgcolor="lightgreen">
+<table border="1" cellpadding="10" cellspacing="5">
+<thead>
+            <tr>
+                <th>ProductName</th><br>
+                <th>Quantity</th>
+                <th>Price</th>
+				<th>Total</th>
+            </tr>
+        </thead>
+<tr>
+  <td>Skull Candy</td>
+  <td><input type="text" value="" name="QTY" id="QTY" onKeyUp="multiply()"/></td>
+  <td><input type="text" name="PPRICE" id="PPRICE" value="1000" /></td>
+  <td><input type="text" name="TOTAL" id="TOTAL" /></td>
+</tr>
+</table>
+<script>
+function multiply()
+{
+    a = Number(document.getElementById('QTY').value);
+    b = Number(document.getElementById('PPRICE').value);
+    c = a * b;
+    document.getElementById('TOTAL').value = c;
+}
+</script>
+<div id="mybutton">
+<a href="form.html">
+  <button  style="background-color:blue;"class="feedback">Click To Order</button>
+  </div>
+  </div>
+  </a>
+</body>
+</html>
